@@ -38,8 +38,8 @@ main{
 
 .imagen{
     background-image: url(../images/image-hero.webp);
-    width: 100%;
-    height: 300px;
+    width: 350px;
+    height: 200px;
     border-radius: 10px;
     background-size: cover;
     position: relative;
@@ -85,13 +85,14 @@ main{
 }
 
 .numero{
-    border-radius: 100%;
-    border-style: solid;
-    width: 5rem;
-    height: 5rem;
+    border-radius: 50%;
+    border-style:solid;
+    width: 4rem;
+    height: 4rem;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
+    color: blueviolet;
     
 }
