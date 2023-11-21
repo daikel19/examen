@@ -1,3 +1,15 @@
+:root{
+    --dark-purple:#24053e;
+    --eucalyptus: #44ffa1;
+    --davys-grey: #584d62;
+    --ghost-white: #fcf8ff;
+    --white: #fff;
+
+    --heading-font: "Frauncs", serif;
+    --body-font: "Manrope", sans-serif;
+
+}
+
 
 html{
     font-size: 62.5%;
@@ -5,13 +17,35 @@ html{
     
  }
 
+ @font-face {
+    font-family: "Fraunces";
+    src: url("../fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf");
+ }
 
+ @font-face {
+    font-family: "Manrope";
+    src: url("../fonts/manrope/Manrope-VariableFont_wght.ttf");
+ }
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
 
-header{
-font-size: 15px;
-text-align: center;
+/*header*/
+.header{
+align-items: center;
+display: flex;
+flex-direction: column;
+color: var(--white);
 
+}
 
+.header::before{
+    content: "Esto es mi header";
+    background-color: var(--dark-purple);
+    clip-path: ellipse(50% 50% at 50% 0%);
+    
 
 }
 
@@ -55,8 +89,6 @@ main{
 }
 
 .contenedor{
-
-    background-color: var(--color);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -64,8 +96,22 @@ main{
     border-radius: 10px;
 } 
  
+.boton{
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: .2rem;
+    font-weight: bold;
+    border: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    
+}
 
-
+nav{
+    font-size: 15px;
+}
 
 
 .letra{
@@ -76,11 +122,11 @@ main{
 }
 
 .letra h2{
-    color:darkslateblue
+    color: var(--dark-purple);
 }
 
 .letra p{
-    color: indigo;
+    color: var(--davys-grey);
 
 }
 
